@@ -68,8 +68,8 @@ class Postform extends Component {
   }
 }
 
-const mapDispatchToProps = ({ uiReducer }) => ({
+const mapStateToProps = ({ uiReducer }) => ({
   darkMode: uiReducer.darkMode
 });
 
-export default connect(mapDispatchToProps, { createPost })(Postform);
+export default connect(mapStateToProps, { createPost })(Postform);
